@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Healthy Company</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Almarai&family=Lexend+Giga&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		.navbar{position: relative;
+                bottom: 14px;
+                background-color:black; }
+    	
+         .navbar-brand{text-align: center;
+                       font-family: 'Lexend Giga', sans-serif;
+                       font-size: 40px;
+                       color: white;}
+
+    	  .nav-link{text-indent: 53px;}
+          .carousel-inner{ position: relative;
+                            bottom: 15px;}
+
+          .box {
+            width: 20%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 35px;
+            border: 2px solid #fff;
+            border-radius: 20px/50px;
+            background-clip: padding-box;
+            text-align: center;
+          }
+          .button {
+            font-size: 1em;
+            padding: 10px;
+            color: #fff;
+            border: 2px solid orange;
+            border-radius: 20px/50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+          }
+          .button:hover {
+            background: orange;
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: visible;
+            opacity: 1;
+          }
+          .overlay:target {
+            visibility: hidden;
+            opacity: 0;
+            display:none
+          }
+          .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 30%;
+            position: relative;
+            transition: all 15s ease-in-out;
+          }
+          .popup h2 {
+            margin-top: 0;
+            color: #333;
+            
+          }
+          .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+          }
+          .popup .close:hover {
+            color: orange;
+          }
+          .popup .content {
+            max-height: 30%;
+            overflow: auto;
+          }
+
+
+
+
+
+
+
+
+
+        @media(max-width:500px){
+        	.awe{display: none;}
+        	.awe2{display: none;}
+        }
+
+
+	</style>
+</head>
+<body>
+
+<!------------------section sub header starts---------------->
+<section>
+	<div class="container-fluid" style="background-color: #000000">
+		<p style="text-align: center;font-family: 'Almarai', sans-serif; font-family: 15px; color: white;">Free Money Vouchers On Orders Above Rs.99 Delivered Within India </p>
+	</div>
+</section>
+<!-------------------section sub header ends------------------>
+
+
+
+
+
+<!-------------------section navbar starts---------------------->
+<section>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a href="" class="navbar-brand">THC</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+   
+    </button>
+
+        
+
+
+
+    <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Grocery</a></li>
+        <li class="nav-item"><a href="" class="nav-link">TEAM</a></li>
+        <li class="nav-item"><a href="" class="nav-link">ABOUT</a></li>
+        <li class="nav-item"><a href="" class="nav-link">SERVICES </a></li>
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#aa">Sign Up</button>
+        <i class="fa fa-user awe2" style="font-size: 30px; color: white;"></i>
+        <i class="fa fa-shopping-cart awe" style="font-size: 30px; color: white"></i>
+        
+
+
+    </ul>
+    </div>
+    
+</nav>    
+
+</section>
+<!-----------------section navbar ends--------------------------->
+
+
+
+
+
+
+
+
+<!---------------section slider starts--------------->
+<section>
+   
+    <div class="carousel slide" data-ride="carousel" id="myslide">
+
+
+        <div class="carousel-inner">
+
+               <div class="carousel-item active">
+                   <img src="image/sale2.jpg" alt="first slide" height="500px" width="100%">
+                   <div class="carousel-caption">
+                  
+                   <button type="button" class="btn btn-primary">BUY NOW</button>
+
+                   </div>
+               </div>
+
+
+
+                <div class="carousel-item">
+                   <img src="image/amaz.jpg" alt="second slide" height="500px" width="100%">
+                   <div class="carousel-caption">
+                   
+                   <button type="button" class="btn btn-primary">BUY NOW</button>
+
+                   </div>
+                   
+               </div>
+
+        </div>
+        <!------------carousel inner end----------->
+                <a href="#myslide" data-slide="prev" class="carousel-control-prev">
+                    
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+
+                 <a href="#myslide" data-slide="next" class="carousel-control-next">
+                    
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+                <ul class="carousel-indicators">
+                <li data-target="#myslide" data-slide-to="0" class="active"></li>
+                <li data-target="#myslide" data-slide-to="1" class=""></li>
+                
+                </ul>
+            
+    </div>
+    <!--------------------carousel slid ends------->
+    
+</section>
+<!------------section slider ends------------------->
+
+
+
+
+
+
+
+<!---------------------section font starts------------------>
+<section style="background-color:#696969;position: relative;bottom: 13px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+              <center>
+              <i class="fas fa-shipping-fast" style="font-size: 90px;"></i>
+              <p style="color:white;">FREE SHIPPING</p>
+              </center>  
+            </div>
+            <div class="col-md-4">
+               <center>
+               <i class="fas fa-undo-alt"  style="font-size: 90px;"></i>
+               <p style="color:white;">FREE RETURNS</p> 
+               </center>
+            </div>
+            <div class="col-md-4">
+                <center>
+               <i class="fas fa-shield-alt"  style="font-size: 90px;"></i>
+               <p style="color:white;">SECURE SHOPPING</p>
+               </center> 
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-------------------section font ends--------------------->
+
+
+
+
+
+
+
+
+<!--------------------section why us starts--------------->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <center><h2 style="font-size:50px;">WHY US ?</h2></center>
+                
+            </div>
+            <div class="col-md-12">
+                <center>
+                <p style="color:#696969;text-transform: capitalize;">the healthy company has been the best and most loved ecommerce of all time all credits goes to our beloved customers because of them we are here.</p>
+                <a href="">LEARN MORE</a></center>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+<!----------------------section why us ends---------------->
+
+
+
+
+
+<!----------------section coupon starts---------------->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+               <a href=""> <img src="image/pant.jpg" width="100%" height="100px;"> </a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-----------------section coupon ends--------------->
+
+
+<br><br>
+
+<!----------------section products starts----------------->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Best Prices On Top Brands</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+             <center><a href=""> <img src="image/cumin.jpg" width="270px" height="270px"> </a></center>
+             <center><a href=""><h4>Organic Pack Of Cumin Seeds</h4></a></center> 
+             <center>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><a href="">customer ratings</a></span>
+                <br>
+
+                <span><a href="" style="color:red;"><i class="fas fa-rupee-sign" style="font-size:15px;"></i>199</a></span>
+                <span><a href="">MRP <del> 278</del></a></span>
+                <br>
+                <span><a href="">19% off</a></span>
+                <br>
+                <button type="button" class="btn btn-primary">BUY NOW</button>
+
+
+                
+
+             </center>
+            </div>
+            <div class="col-md-4">
+             <center><a href=""> <img src="image/tom.jpg" width="270px" height="270px"> </a></center>
+             <center><a href=""><h4>Organic Pack Of Diced Tomatoes</h4></a></center> 
+             <center>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                
+                <span><a href="">customer ratings</a></span>
+                <br>
+
+                <span><a href="" style="color:red;"><i class="fas fa-rupee-sign" style="font-size:15px;"></i>399</a></span>
+                <span><a href="">MRP <del> 478</del></a></span>
+                <br>
+                <span><a href="">8% off</a></span>
+                <br>
+                <button type="button" class="btn btn-primary">BUY NOW</button>
+
+
+                
+
+             </center>   
+            </div>
+            <div class="col-md-4">
+             <center><a href=""> <img src="image/beans.jpg" width="270px" height="270px"> </a></center>
+             <center><a href=""><h4>Organic Pack Of Baked Beans</h4></a></center> 
+             <center>
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                
+                
+                <span><i class="fas fa-star" style="color:orange; font-size: 20px;"></i></span>
+                <span><a href="">customer ratings</a></span>
+                <br>
+
+                <span><a href="" style="color:red;"><i class="fas fa-rupee-sign" style="font-size:15px;"></i>349</a></span>
+                <span><a href="">MRP <del> 578</del></a></span>
+                <br>
+                <span><a href="">12% off</a></span>
+                <br>
+                <button type="button" class="btn btn-primary">BUY NOW</button>
+
+
+                
+
+             </center>   
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<!------------------section products ends-------------------->
+
+<br><br><br>
+
+<!----------------------------section last starts------------------>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <center><h4>Shop By Offers</h4></center>
+            </div>
+        </div>
+
+
+       <div class="row">
+           <div class="col-md-4">
+            <center><a href=""><img src="image/combo.jpg" width="270px" height="270px"></a></center> 
+           </div>
+
+           <div class="col-md-4">
+             <center><a href=""><img src="image/jl.jpg" width="270px" height="270px"></a></center>  
+           </div>
+
+
+           <div class="col-md-4">
+             <center><a href=""><img src="image/bmsm.jpg" width="270px" height="270px"></a></center>  
+           </div>
+
+
+
+           
+
+
+
+
+
+       </div>
+
+
+    </div>
+    
+</section>
+<!---------------------------section last ends---------------------->
+
+
+<br><br>
+
+
+<!---------------------------footer starts------------->
+<section>
+    <div class="container-fluid" style="background-color: #d2cbc4;position: relative;bottom: 1px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <center>
+                  <h3>Contact us:</h3>
+                  <a href=""><i class="fa fa-instagram" style="font-size: 30px;color: #8642bb;"></i></a>&nbsp;
+                  <a href=""><i class="fa fa-facebook-official" style="font-size: 30px;"></i></a>&nbsp;
+                  <a href=""><i class="fa fa-twitter" style="font-size: 30px;"></i></a>&nbsp;
+                  <a href=""><i class="fa fa-telegram" style="font-size: 30px;"></i></a>
+                  </center>
+
+  
+                </div>
+
+                <div class="col-md-4">
+                  <h3 style="text-align: center;">Join Our Newsletter</h3>
+                  <button class="btn  btn-block" style="background-color:#ADD8E6">Subscribe</button>  
+                </div>
+
+                <div class="col-md-4">
+                    <h3 style="text-align: center;">Download THC App On</h3>
+                    <center>                    
+                    <a href=""><i class="fa fa-android" style="font-size: 30px;"></i></a>&nbsp;
+                    <a href=""><i class="fa fa-apple" style="font-size: 30px;"></i></a>
+                    </center>
+                </div>
+
+            </div>
+            <!-------------------div row ends---------------->
+            <center><footer>&copy; Copyright 2021 THC</footer></center>
+
+        </div>
+        <!----------------------div container ends------------>
+        
+    </div>
+    <!---------------div container-fluid ends------------->
+</section>
+<!--------------------------footer ends----------------->
+
+
+
+<!---------------------------section pop up starts-------------->
+<section>
+   <div class="box">
+        <a class="button" href="#">Let me Pop up</a>
+    </div> 
+
+    <div id="popup1" class="overlay">
+        <div class="popup" >
+            <h2>58% OFF</h2>
+            <a class="close" href="#popup1">×</a>
+            <div class="content">
+                <p>Don't Miss This Chance!!!!!!!</p>
+                 <button type="button" class="btn btn-primary">KNOW MORE</button>
+
+            </div>
+        </div>
+    </div>  
+</section>
+<!------------------------section pop up ends-------------------->
+
+
+
+
+
+
+</body>
+</html>
